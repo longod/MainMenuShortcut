@@ -1,5 +1,5 @@
 # Main Menu Shortcut
-This mod allows to press each button on Main Menu with a shortcut key for the initial letter (excluding Credit).
+This mod allows you to press the initial letter of each button on the main menu as a shortcut key (excluding Credit).
 So you can quickly access the desired item.
 
 Exit button of Main Menu on the title screen can be pressed using Esc key.
