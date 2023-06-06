@@ -76,6 +76,15 @@ local function OnKeyDown(e)
     if tes3ui.findMenu(tes3ui.registerID("MenuMessage")) then
         return
     end
+    -- It is better to check textInputFocus if a case exists where there is input other than console.
+    -- but since the console keep holding textInputFocus even it is invisible, it would be better to just check the console visibility.
+    -- if tes3.worldController.menuController.inputController.textInputFocus then
+    --     return
+    -- end
+    local console = tes3ui.findMenu(tes3ui.registerID("MenuConsole"))
+    if console and console.visible then
+        return
+    end
 
     -- on main menu
     local mainMenu = tes3.onMainMenu()
